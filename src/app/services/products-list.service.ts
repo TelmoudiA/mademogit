@@ -9,7 +9,7 @@ export class ProductsListService {
     {code: 'p200', nom: 'vue sur mer', prix: 500.0},
     {code: 'p302220', nom: 'vue sur terre', prix: 100.0}];
   constructor() { }
-getAllProducts(): Product[] {
+getAllProducts(): Product[]    {
   return this.data;
 }
 }
