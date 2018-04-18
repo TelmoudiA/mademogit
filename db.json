@@ -1,8 +1,16 @@
 {
-    "products": [
-      { "id": 1, "code": "P100", "nom": "typicode", "prix": 1500.5 },
-      { "id": 2, "code": "P200", "nom": "typicode", "prix": 1500.5 },
-      { "id": 3, "code": "P300", "nom": "typicode", "prix": 1500.5 }
 
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "nom": "json-server",
+      "prix": 50
+    },
+    {
+      "id": 2,
+      "nom": "json-server2",
+      "prix": 50
+    }
+  ]
+
+}
