@@ -12,9 +12,10 @@ import { RouterModule } from '@angular/router';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { MyRoutingModule } from './MyroutingModule/myrouting.module';
 
 // added by AT
-const routetables = [
+/*const routetables = [
 
   {path: 'list', component: ProductsListComponent},
   {path: 'list/:id', component: DetailComponent},
@@ -23,7 +24,7 @@ const routetables = [
   {path: '', redirectTo: '/welcome', pathMatch: 'full'},
   {path: '**', component: NotFoundComponent},
   ];
-
+*/
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ const routetables = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routetables, { useHash: false})
+    MyRoutingModule
+  //  RouterModule.forRoot(routetables, { useHash: false})
   ],
   providers: [ProductsListService],
   bootstrap: [AppComponent]
